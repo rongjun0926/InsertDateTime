@@ -20,8 +20,8 @@
     <ProjectGuid>{28C22525-03C6-4B1B-BC87-B1D8A39E87AA}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>InsertGuid</RootNamespace>
-    <AssemblyName>InsertGuid</AssemblyName>
+    <RootNamespace>InsertDateTime</RootNamespace>
+    <AssemblyName>InsertDateTime</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <GeneratePkgDefFile>true</GeneratePkgDefFile>
     <IncludeAssemblyInVSIXContainer>true</IncludeAssemblyInVSIXContainer>
@@ -48,8 +48,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Commands\InsertGuidCommand.cs" />
-    <Compile Include="InsertGuidPackage.cs" />
+    <Compile Include="Commands\InsertDateTimeCommand.cs" />
+    <Compile Include="InsertDateTimePackage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="source.extension.cs">
       <AutoGen>True</AutoGen>

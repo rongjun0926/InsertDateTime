@@ -5,14 +5,14 @@ using Community.VisualStudio.Toolkit;
 using Microsoft.VisualStudio.Shell;
 using Task = System.Threading.Tasks.Task;
 
-namespace InsertGuid
+namespace InsertDateTime
 {
     [PackageRegistration(UseManagedResourcesOnly = true, AllowsBackgroundLoading = true)]
     [InstalledProductRegistration(Vsix.Name, Vsix.Description, Vsix.Version)]
     [ProvideMenuResource("Menus.ctmenu", 1)]
-    [Guid(PackageGuids.guidInsertGuidPackageString)]
+    [Guid(PackageGuids.guidInsertDateTimePackageString)]
     [ProvideBindingPath]
-    public sealed class InsertGuidPackage : ToolkitPackage
+    public sealed class InsertDateTimePackage : ToolkitPackage
     {
         protected override async Task InitializeAsync(CancellationToken cancellationToken, IProgress<ServiceProgressData> progress)
         {

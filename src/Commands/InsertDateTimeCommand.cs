@@ -6,10 +6,10 @@ using Microsoft.VisualStudio.Shell;
 using Microsoft.VisualStudio.Text;
 using Task = System.Threading.Tasks.Task;
 
-namespace InsertGuid
+namespace InsertDateTime
 {
-    [Command(PackageGuids.guidInsertGuidCmdSetString, PackageIds.cmdInsertGuid)]
-    public class InsertGuidCommand : BaseCommand<InsertGuidCommand>
+    [Command(PackageGuids.guidInsertDateTimeCmdSetString, PackageIds.cmdInsertDateTime)]
+    public class InsertDateTimeCommand : BaseCommand<InsertDateTimeCommand>
     {
         protected override async Task ExecuteAsync(OleMenuCmdEventArgs e)
         {
@@ -21,7 +21,7 @@ namespace InsertGuid
 
             using (ITextEdit edit = docView.TextBuffer.CreateEdit())
             {
-                var guid = Guid.NewGuid().ToString();
+                var guid = DateTime.Now.ToString("yyyyMMddHH:mm:ss");
 
                 foreach (SnapshotSpan selection in selections.Reverse())
                 {

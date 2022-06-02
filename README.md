@@ -1,14 +1,10 @@
-﻿[marketplace]: https://marketplace.visualstudio.com/items?itemName=MadsKristensen.InsertGuid
-[vsixgallery]: http://vsixgallery.com/extension/9def4441-acfd-4dd6-bffd-4531a57dee37/
-[repo]:https://github.com/madskristensen/InsertGuid
+﻿[repo]:https://github.com/rongjun0926/InsertDateTime
 
 # Inser DateTime command
 
 [![Build](https://github.com/madskristensen/InsertGuid/actions/workflows/build.yaml/badge.svg)](https://github.com/madskristensen/InsertGuid/actions/workflows/build.yaml)
-
-Makes it super easy to insert a new GUID into any editor and input field. 
-
-Insert a new GUID by invoking the command under the **Edit** top-level menu or hit `CTRL+K,Space`. The Insert Guid command is also available in the context-menu of documents.
+基于https://github.com/madskristensen/InsertGuid
+一键插入yyyyMMddHH:mm:ss时间格式VS扩展 
 
 ![Command](art/command.png)
 

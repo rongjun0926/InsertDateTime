@@ -2,7 +2,7 @@
   "$schema": "http://json.schemastore.org/vsix-publish",
   "categories": [ "other", "coding" ],
   "identity": {
-    "internalName": "InsertGuid",
+    "internalName": "InsertDateTime",
     "tags": [ "guid" ]
   },
   "assetFiles": [
@@ -12,6 +12,6 @@
     }
   ],
   "overview": "README.md",
-  "publisher": "MadsKristensen",
-  "repo": "https://github.com/MadsKristensen/InsertGuid"
+  "publisher": "约上柳梢头",
+  "repo": "https://github.com/rongjun0926/InsertDateTime"
 }

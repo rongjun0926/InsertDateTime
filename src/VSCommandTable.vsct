@@ -1,39 +1,39 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
-  <Extern href="stdidcmd.h"/>
-  <Extern href="vsshlids.h"/>
-  <Include href="KnownImageIds.vsct"/>
+	<Extern href="stdidcmd.h"/>
+	<Extern href="vsshlids.h"/>
+	<Include href="KnownImageIds.vsct"/>
 
-  <Commands package="guidInsertGuidPackage">
-    <Buttons>
-      <Button guid="guidInsertGuidCmdSet" id="cmdInsertGuid" priority="0x0900" type="Button">
-        <Parent guid="guidSHLMainMenu" id="IDG_VS_EDIT_CUTCOPY"/>
-        <Icon guid="ImageCatalogGuid" id="PasteAppend"/>
-        <CommandFlag>IconIsMoniker</CommandFlag>
-        <CommandFlag>DynamicVisibility</CommandFlag>
-        <Strings>
-          <ButtonText>Insert Guid</ButtonText>
-        </Strings>
-      </Button>
-    </Buttons>
-  </Commands>
+	<Commands package="guidInsertDateTimePackage">
+		<Buttons>
+			<Button guid="guidInsertDateTimeCmdSet" id="cmdInsertDateTime" priority="0x0900" type="Button">
+				<Parent guid="guidSHLMainMenu" id="IDG_VS_EDIT_CUTCOPY"/>
+				<Icon guid="ImageCatalogGuid" id="PasteAppend"/>
+				<CommandFlag>IconIsMoniker</CommandFlag>
+				<CommandFlag>DynamicVisibility</CommandFlag>
+				<Strings>
+					<ButtonText>插入时间</ButtonText>
+				</Strings>
+			</Button>
+		</Buttons>
+	</Commands>
 
-  <KeyBindings>
-    <KeyBinding guid="guidInsertGuidCmdSet" id="cmdInsertGuid" mod1="Control" key1="K" mod2="Control" key2="VK_SPACE" editor="guidVSStd97"/>
-  </KeyBindings>
+	<KeyBindings>
+		<KeyBinding guid="guidInsertDateTimeCmdSet" id="cmdInsertDateTime" mod1="Control" key1="K" mod2="Control" key2="VK_SPACE" editor="guidVSStd97"/>
+	</KeyBindings>
 
-  <CommandPlacements>
-    <CommandPlacement guid="guidInsertGuidCmdSet" id="cmdInsertGuid" priority="6000">
-      <Parent guid="guidSHLMainMenu" id="IDG_VS_CODEWIN_TEXTEDIT" />
-    </CommandPlacement>
-  </CommandPlacements>
-  
-  <Symbols>
-    <GuidSymbol name="guidInsertGuidPackage" value="{40121d57-9e96-4986-becb-fe05620e79a8}" />
+	<CommandPlacements>
+		<CommandPlacement guid="guidInsertDateTimeCmdSet" id="cmdInsertDateTime" priority="6000">
+			<Parent guid="guidSHLMainMenu" id="IDG_VS_CODEWIN_TEXTEDIT" />
+		</CommandPlacement>
+	</CommandPlacements>
 
-    <GuidSymbol name="guidInsertGuidCmdSet" value="{1440eeb0-81f7-4062-b88a-99ca97249e33}">
-      <IDSymbol name="cmdInsertGuid" value="0x0100" />
-    </GuidSymbol>
-  </Symbols>
+	<Symbols>
+		<GuidSymbol name="guidInsertDateTimePackage" value="{50121d57-9e96-4986-becb-fe05620e79a8}" />
+
+		<GuidSymbol name="guidInsertDateTimeCmdSet" value="{2440eeb0-81f7-4062-b88a-99ca97249e33}">
+			<IDSymbol name="cmdInsertDateTime" value="0x0100" />
+		</GuidSymbol>
+	</Symbols>
 </CommandTable>
