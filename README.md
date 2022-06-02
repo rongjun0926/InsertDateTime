@@ -2,7 +2,7 @@
 [vsixgallery]: http://vsixgallery.com/extension/9def4441-acfd-4dd6-bffd-4531a57dee37/
 [repo]:https://github.com/madskristensen/InsertGuid
 
-# Insert new Guid command
+# Inser DateTime command
 
 [![Build](https://github.com/madskristensen/InsertGuid/actions/workflows/build.yaml/badge.svg)](https://github.com/madskristensen/InsertGuid/actions/workflows/build.yaml)
 
